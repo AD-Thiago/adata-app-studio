@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 249, 250, 251;
+  --background-rgb: 3, 7, 18;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #111827;
+}
+::-webkit-scrollbar-thumb {
+  background: #374151;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4b5563;
+}
+
+/* Prose customization for PRD rendering */
+.prose h1, .prose h2, .prose h3 {
+  color: #f9fafb;
+}
+.prose p, .prose li {
+  color: #d1d5db;
+}
+.prose code {
+  background: #1f2937;
+  color: #a78bfa;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+}
+.prose a {
+  color: #8b5cf6;
+}
